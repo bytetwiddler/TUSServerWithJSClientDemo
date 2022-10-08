@@ -21,7 +21,6 @@ For a prettier and more official demo please go to the <a href="http://tus.io/de
 
 ```
 cd TUSServerWithJSClientExample
-git mod tidy
 make run
 ```
 
