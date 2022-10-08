@@ -21,7 +21,6 @@ after git cloning the repo.
 
 ```
 cd TUSServerWithJSClientDemo
-mkdir uploads
 git mod tidy
 make run
 ```
