@@ -34,7 +34,7 @@ To create executables for the most common platforms and put them in a *bin* dire
 make compile
 ```
 
-Or if you don't have or want *make* and just ***go*** at it.
+Or if you don't have or want *make* then just ***go*** at it.
 ```
 mkdir uploads
 go mod tidy
