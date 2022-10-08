@@ -42,6 +42,8 @@ go build -o tcserver main.go && ./tcserver
 ```
 Site should be running at http://localhost:8080/client
 
+See the **client.html** template file for the html/css and javascript imports.
+
 ## License
 
 This project is licensed under the MIT license, see `LICENSE.txt`.
