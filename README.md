@@ -37,6 +37,7 @@ make compile
 Or if you don't have or want *make* and just ***go*** at it.
 ```
 mkdir uploads
+go mod tidy
 go build -o tcserver main.go && ./tcserver
 ```
 Site should be running at http://localhost:8080/client
