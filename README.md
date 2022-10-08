@@ -16,8 +16,8 @@ examples from the *tusd* and *tus-js-client* to make them work together in a sin
 For a prettier and more official demo please go to the <a href="http://tus.io/demo.html">tus.io</a> website.</br></br>
 <b>Warning:</b> This code is not production worthy, it is just a "***get'er work'n***" example!</h4></br>
 </p>    
-**Running the code:**
-after git cloning the repo.
+
+**Running the code:** (after git cloning the repo)
 
 ```
 cd TUSServerWithJSClientDemo
@@ -34,10 +34,17 @@ To create executables for the most common platforms and put them in a *bin* dire
 make compile
 ```
 
-Or if you don't have or want *make* then just ***go*** at it.
+Or if you don't want to muss with *make* then just ***go*** at it.
 ```
+cd TUSServerWithJSClientDemo
+
+# uploads directory must exist
 mkdir uploads
+
 go mod tidy
+
+go run main.go
+# or
 go build -o tcserver main.go && ./tcserver
 ```
 Site should be running at http://localhost:8080/client
