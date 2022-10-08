@@ -65,7 +65,8 @@ func main() {
 	}()
 
 	/*********************************************************************************
-	 ** The following two lines are all I add to the tus.io golang net/http example **
+	 ** The following two lines are all I add to main() from  the tus.io golang     **
+	 ** net/http example.                                                           **
 	 *********************************************************************************/
 	http.Handle("/", http.FileServer(http.Dir("/Users/billb/src/tusserv/scripts")))
 	http.HandleFunc("/client", ClientHandler)
