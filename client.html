@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>tus-js-client demo - File Upload</title>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h2>TUS golang server with tus-js-client example</h2>
+
+      <p>
+        This demo shows the basic functionality of the tus protocol. 
+        You can select a file using the controls below and start/pause the upload as you wish.
+      </p>
+
+      <p>
+        For a prettier and more official demo please go to the <a href="http://tus.io/demo.html">tus.io</a> website.</br></br>
+        This is an all-in-one example to aid developers with both a TUS client & TUS server working in one executable.</br>
+        </p>
+        <p>
+        This example is based upon modified versions of 
+        <a href="https://github.com/tus/tusd/blob/master/examples/server/main.go">TUS golang server example</a> and 
+        <a href="https://github.com/tus/tus-js-client">tus-js-client</a></br>
+      </p>
+      <b>Warning:</b> This code is not production worthy, it is just a "get'er work'n" example!</h4></br>
+      <div class="alert alert-warining hidden" id="support-alert">
+        <b>Warning!</b> Your browser does not seem to support the features necessary to run tus-js-client. The buttons below may work but probably will fail silently.
+      </div>
+
+      <br>
+
+      <table>
+        <tr>
+          <td>
+            <label for="endpoint">
+              Upload endpoint:
+            </label>
+          </td>
+          <td>
+            <input type="text" id="endpoint" name="endpoint" value="http://localhost:8080/files/">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="chunksize">
+              Chunk size (bytes):
+            </label>
+          </td>
+          <td>
+            <input type="number" id="chunksize" name="chunksize" value="4096">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="paralleluploads">
+              Parallel upload requests:
+            </label>
+          </td>
+          <td>
+            <input type="number" id="paralleluploads" name="paralleluploads" value="4">
+          </td>
+        </tr>
+      </table>
+
+      <br>
+
+      <input type="file">
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="span8">
+          <div class="progress progress-striped progress-success">
+            <div class="bar" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div class="span4">
+          <button class="btn stop" id="toggle-btn">start upload</button>
+        </div>
+      </div>
+
+      <hr>
+      <h3>Uploads</h3>
+      <p id="upload-list">
+        Succesful uploads will be listed here. Try one!
+      </p>
+
+    </div>
+
+  <script src="tus.min.js"></script>
+  <script src="demo.js"></script>
+  </body>
+</html>
+
