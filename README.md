@@ -1,4 +1,4 @@
-# TUS server example with integrated pure javascript client
+# TUS upload server with integrated javascript client (tus-js-client.js)
 
 Example of the **TUS net/http server** with the pure javascript client **"tus-js-client.js"** integrated into the same executable.
 
