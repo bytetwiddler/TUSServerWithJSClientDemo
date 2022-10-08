@@ -1,4 +1,4 @@
-# TUS upload server with integrated javascript client (tus-js-client.js)
+# TUS reloadable upload server with integrated javascript client
 
 Example **TUS** golang core net/http server with the pure javascript client **"tus-js-client.js"** integrated into the same executable.
 
