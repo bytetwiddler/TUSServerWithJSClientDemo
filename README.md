@@ -20,7 +20,7 @@ For a prettier and more official demo please go to the <a href="http://tus.io/de
 **Running the code:** (after git cloning the repo)
 
 ```
-cd TUSServerWithJSClientDemo
+cd TUSServerWithJSClientExample
 git mod tidy
 make run
 ```
@@ -36,7 +36,7 @@ make compile
 
 Or if you don't want to muss with *make* then just ***go*** at it.
 ```
-cd TUSServerWithJSClientDemo
+cd TUSServerWithJSClientExample
 
 # uploads directory must exist
 mkdir uploads
