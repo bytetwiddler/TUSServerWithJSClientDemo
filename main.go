@@ -10,10 +10,10 @@ import (
 	tusd "github.com/tus/tusd/pkg/handler"
 )
 
-/*****************************************************************
-*** I added the follwing handler to the server example         ***
-*** with a template that handles the html/css/js.              ***
-******************************************************************/
+/******************************************************************
+*** I added the follwing handler to the server example with     ***
+*** a template that handles the html/css and javascript imports ***
+*******************************************************************/
 
 // ClientHandler see above
 func ClientHandler(w http.ResponseWriter, r *http.Request) {
