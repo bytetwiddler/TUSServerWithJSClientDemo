@@ -1,15 +1,10 @@
-# TUS reloadable upload server with integrated javascript client
+# TUS reloadable upload server with integrated tus-js-client client
 
-Example **TUS** golang core net/http server with the pure javascript client **"tus-js-client.js"** integrated into the same executable.
+Example **TUS** golang core net/http server with integrated pure javascript client **"tus-js-client.js"**.
 
-I needed to add resumable large file uploads to a web app I was working on. I found the <a href="https://tus.io">tus.io</a> site
-and it looked interesting. The **tusd** server examples provided a golang TUS core *net/http* example of just the server, 
-and I could see that there was a pure javascript client **tus-js-client.js**.  Those looked great but I could not find an 
-example that integrated both of them into a single application. This code is my attempt at modifying the
-examples from the *tusd* and *tus-js-client* to make them work together in a single golang application. 
+I could not find an example of a golang web app that integrated both the TUS server and a javascript client of them into a single site. Here is an example how to do that with minimal effort.  Just one extra handler added to the **tusd** golang example server to serve the **tus-js-client** in a "client.html" file implemented as a golang template.
 
-
-**Attribution:** This code is largely just magpied and modified from:
+**Attribution:** This code is largely magpied and modified from:
         <a href="https://github.com/tus/tusd/blob/master/examples/server/main.go">TUS golang server example</a> and 
         <a href="https://github.com/tus/tus-js-client">tus-js-client</a>. Thank you for those examples.</br>
 
