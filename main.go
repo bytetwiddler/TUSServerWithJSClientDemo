@@ -68,7 +68,7 @@ func main() {
 	 ** The following two lines are all I add to main() from  the tus.io golang     **
 	 ** net/http example.                                                           **
 	 *********************************************************************************/
-	http.Handle("/", http.FileServer(http.Dir("/Users/billb/src/tusserv/scripts")))
+	http.Handle("/", http.FileServer(http.Dir("scripts")))
 	http.HandleFunc("/client", ClientHandler)
 
 	// Right now, nothing has happened since we need to start the HTTP server on
