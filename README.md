@@ -2,16 +2,14 @@
 
 **Summary:**
 
-Integrating the **"tus-js-client.js"** with the golang net/http core **TUS** server found in the examples at the 
+Integrating the **"tus-js-client"** with the golang net/http core **TUS** server found in the examples at the 
 <a href="https://github.com/tus/tusd/blob/master/examples/server/main.go">**tusd** repo</a>. 
 
 **Attribution:** This code is largely magpied and modified from:
         <a href="https://github.com/tus/tusd/blob/master/examples/server/main.go">TUS golang server example</a> and 
         <a href="https://github.com/tus/tus-js-client">tus-js-client</a> and the 
 	official <a href="https://tus.io/demo.html">tus.io demo.</a>
-	**Thank you to the teams behind those projects**.
-
-To see the official demo please go to the <a href="http://tus.io/demo.html">tus.io</a> **tus.io website**.</br>
+To see the official demo please go to the <a href="http://tus.io/demo.html">tus.io</a> **tus.io** website. **Thank you to the teams behind those projects**.
 
 <b>Warning:</b> This code is not production worthy, it is just a "***get'er work'n***" example!</h4></br>
 
