@@ -2,13 +2,14 @@
 
 **Summary:**
 
-Golang **TUS** server with integrated javascript client **"tus-js-client.js"**. A minimalist example of 
-integrating **tus-js-client** with the example golang core net/http server found in the 
+Integrating the **"tus-js-client.js"** with the golang net/http core **TUS** server found in the examples at the 
 <a href="https://github.com/tus/tusd/blob/master/examples/server/main.go">**tusd** repo</a>. 
 
 **Attribution:** This code is largely magpied and modified from:
         <a href="https://github.com/tus/tusd/blob/master/examples/server/main.go">TUS golang server example</a> and 
-        <a href="https://github.com/tus/tus-js-client">tus-js-client</a>. Thank you to the teams behind those projects.</br>
+        <a href="https://github.com/tus/tus-js-client">tus-js-client</a> and the 
+	official <a href="https://tus.io/demo.html">tus.io demo.</a>
+	**Thank you to the teams behind those projects**.
 
 To see the official demo please go to the <a href="http://tus.io/demo.html">tus.io</a> **tus.io website**.</br>
 
@@ -36,10 +37,10 @@ In **main()** I add two handler functions.  One to serve up the ClientHandler
 template and another to serve the static graphics, css and javascript client files.
 
 ```
-/*********************************************************************************
- ** The following two lines are all I add to main() from  the tus.io golang     **
- ** net/http example.                                                           **
- *********************************************************************************/
+/****************************************************************
+ ** The following two lines are all I add to main() from the   **
+ ** tus.io golang net/http example.                            **
+ ****************************************************************/
 
 http.Handle("/", http.FileServer(http.Dir("scripts")))
 http.HandleFunc("/client", ClientHandler)```
@@ -49,9 +50,10 @@ http.HandleFunc("/client", ClientHandler)```
 All the HTML/CSS/Javascript is in a golang template **client.html**. It turns out 
 This could have been a static HTML file as I ended up not needing templateing tags.
 
-**Running the code:** (after git cloning the repo)
+**Running the code:**
 
 ```
+git clone git@github.com:bytetwiddler/TUSServerWithJSClientExample.git
 cd TUSServerWithJSClientExample
 make run
 ```
