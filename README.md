@@ -66,7 +66,9 @@ make compile
 ```
 
 Or if you don't want to muss with *make* then just ***go*** at it.
+
 ```
+git clone git@github.com:bytetwiddler/TUSServerWithJSClientExample.git
 cd TUSServerWithJSClientExample
 
 # the uploads directory must exist prior to running or uploads will fail
