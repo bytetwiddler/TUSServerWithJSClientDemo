@@ -69,7 +69,7 @@ func main() {
 	 ** net/http example.                                                           **
 	 *********************************************************************************/
 	http.Handle("/", http.FileServer(http.Dir("scripts")))
-	http.HandleFunc("/client", ClientHandler)
+	http.HandleFunc("/client/", ClientHandler)
 
 	// Right now, nothing has happened since we need to start the HTTP server on
 	// our own. In the end, tusd will start listening on and accept request at
