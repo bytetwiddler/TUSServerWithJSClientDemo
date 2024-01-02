@@ -69,12 +69,15 @@ func main() {
 	 ** net/http example.                                                           **
 	 *********************************************************************************/
 	http.Handle("/", http.FileServer(http.Dir("scripts")))
-	http.HandleFunc("/client/", ClientHandler)
+	http.HandleFunc("/client", ClientHandler)
+	rh := http.RedirectHandler("/client", 307)
+	http.Handle("/client/", rh)
 
 	// Right now, nothing has happened since we need to start the HTTP server on
 	// our own. In the end, tusd will start listening on and accept request at
 	// http://localhost:8080/files
 	http.Handle("/files/", http.StripPrefix("/files/", handler))
+
 	err = http.ListenAndServe(":8080", nil)
 	if err != nil {
 		panic(fmt.Errorf("Unable to listen: %s", err))
